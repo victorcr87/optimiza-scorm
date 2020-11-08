@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Optimiza Scorm",
+    "version": "1.0",
+  
+    "description": "Optimiza la lectura de las unidades temáticas  en su versión completa en la plataforma de FP a distancia.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.edu.xunta.gal/fpadistancia/pluginfile.php/*"],
+        "js": ["optimiza-scorm.js"]
+      }
+    ]
+  
+  }
